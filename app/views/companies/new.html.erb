@@ -1,0 +1,11 @@
+<%= link_to "index", companies_path(@companies) %>
+
+<h3> Create a new company </h3>
+
+<%= form_for(@company) do |f| %>
+<p>Name: <% f.label :name %> </p>
+<%= f.text_field :name %>
+
+
+<%= f.submit %>
+<% end %>

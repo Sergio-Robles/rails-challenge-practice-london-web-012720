@@ -1,0 +1,16 @@
+<%= link_to "index", buildings_path(@buildings) %>
+
+
+<h3>Building name: <%=@building.name%> </h3>
+<p>Country: <%=@building.country%> </p>
+<p>Address: <%=@building.address%> </p>
+<p>Rent per floor: <%=@building.rent_per_floor%> </p>
+<p>Number of floors: <%=@building.number_of_floors%> </p><br>
+<h4> Offices in this building: </h4>
+<% @building.companies.each do |c| %>
+    <h4> <%= c.name %> </h4>
+<% end %><br>
+<h4> Total rent income for this building: </h4>
+<p> <%= @building.total_rent_for_building %> </p> 
+
+

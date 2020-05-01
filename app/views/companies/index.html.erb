@@ -1,0 +1,8 @@
+<%= link_to "Create a company", '/companies/new' %>
+
+<h3>Companies:</h3>
+
+<% @companies.each do |t|%>
+<h1><%= t.name%> </h1>
+
+<% end %>

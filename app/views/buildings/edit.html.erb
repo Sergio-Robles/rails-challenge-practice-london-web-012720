@@ -1,0 +1,22 @@
+<h1>Modify A Building </h1>
+
+<%= form_for(@building) do |f| %>
+<p>Name: <% f.label :name %> </p>
+<%= f.text_field :name %>
+
+<p>Country:<% f.label :country %> </p>
+<%= f.text_field :country %>
+
+<p>Address:<% f.label :address %></p>
+<%= f.text_field :address %>
+
+<p>Rent per floor:<% f.label :rent_per_floor %> </p>
+<%= f.number_field :rent_per_floor %>
+
+<p>Number of floors:<% f.label :number_of_floors %> </p>
+<%= f.number_field :number_of_floors %>
+
+
+
+<%= f.submit %>
+<% end %>
